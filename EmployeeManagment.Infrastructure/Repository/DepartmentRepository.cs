@@ -13,7 +13,7 @@ public class DepartmentRepository : BaseRepository<Department>, IDepartmentRepos
     {
         _db = db;
     }
-    public async Task<Department> GetById(Guid id, CancellationToken cancellationToken)
+    public async Task<Department> GetById(int id, CancellationToken cancellationToken)
     {
         return await _db.Departments.FirstOrDefaultAsync(d => d.Id == id, cancellationToken);
     }

@@ -6,7 +6,7 @@ namespace EmployeeManagment.Domain.Entities.Employees;
 
 public sealed class Employee 
 {
-    public  Guid Id { get; set; }
+    public  int Id { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public DateTime HireDate { get; set; }
@@ -15,10 +15,10 @@ public sealed class Employee
     public DateTime UpdatedOn { get; set; }
 
     // Navigation Properties
-    public Guid DesignationId { get; set; }
+    public int DesignationId { get; set; }
     public Designation Designation { get; set; }
 
-    public Guid DepartmentId { get; set; }
+    public int DepartmentId { get; set; }
     public Department Department { get; set; }
    
 }

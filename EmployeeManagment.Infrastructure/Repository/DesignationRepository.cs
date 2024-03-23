@@ -18,7 +18,7 @@ public class DesignationRepository : BaseRepository<Designation>, IDesignationRe
     {
         _db = db;
     }
-    public async Task<Designation> GetById(Guid id, CancellationToken cancellationToken)
+    public async Task<Designation> GetById(int id, CancellationToken cancellationToken)
     {
         return await _db.Designations.FirstOrDefaultAsync(d=> d.Id==id, cancellationToken);
     }

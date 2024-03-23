@@ -11,6 +11,6 @@ namespace EmployeeManagment.Domain.Abstraction;
 
 public interface IDesignationRepository : IRepository<Designation>
 {
-    Task<Designation> GetById(Guid id, CancellationToken cancellationToken);
+    Task<Designation> GetById(int id, CancellationToken cancellationToken);
 
 }

@@ -6,7 +6,7 @@ namespace EmployeeManagment.Domain.Entities.Departments;
 
 public sealed class Department
 {
-    public Guid Id { get; set; }
+    public int Id { get; set; }
     public DepartmentType Name { get; set; } // Change type to DepartmentType
     public string Location { get; set; }
 }

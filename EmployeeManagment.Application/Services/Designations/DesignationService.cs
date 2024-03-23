@@ -12,7 +12,7 @@ public class DesignationService: BaseService<Designation>, IDesignationService
     {
         _designationRepository = designationRepository;
     }
-    public async Task<Designation> GetById(Guid id, CancellationToken cancellationToken = default)
+    public async Task<Designation> GetById(int id, CancellationToken cancellationToken = default)
     {
       return await _designationRepository.GetById(id, cancellationToken);
     }

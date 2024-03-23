@@ -12,7 +12,7 @@ public class DepartmentService : BaseService<Department>, IDepartmentService
     {
         _departmentsRepository = departmentRepository;
     }
-    public async Task<Department> GetById(Guid id, CancellationToken cancellationToken = default)
+    public async Task<Department> GetById(int id, CancellationToken cancellationToken = default)
     {
         return await _departmentsRepository.GetById(id, cancellationToken); 
     }

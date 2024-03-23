@@ -5,6 +5,6 @@ namespace EmployeeManagment.Application.Abstraction;
 
 public interface IDesignationService : IService<Designation>
 {
-    Task<Designation> GetById(Guid id, CancellationToken cancellationToken = default);
+    Task<Designation> GetById(int id, CancellationToken cancellationToken = default);
 
 }

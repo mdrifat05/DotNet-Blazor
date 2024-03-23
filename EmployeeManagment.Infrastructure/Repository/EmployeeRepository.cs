@@ -15,7 +15,7 @@ public class EmployeeRepository : BaseRepository<Employee>, IEmployeeRepository
         _db = db;
     }
 
-    public async Task<Employee> GetById(Guid id, CancellationToken cancellationToken)
+    public async Task<Employee> GetById(int id, CancellationToken cancellationToken)
     {
         return await _db.Employees.FirstOrDefaultAsync(e => e.Id == id, cancellationToken);
     }

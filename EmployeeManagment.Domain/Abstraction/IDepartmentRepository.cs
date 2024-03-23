@@ -10,6 +10,6 @@ namespace EmployeeManagment.Domain.Abstraction;
 
 public interface IDepartmentRepository : IRepository<Department>
 {
-    Task<Department> GetById(Guid id, CancellationToken cancellationToken);
+    Task<Department> GetById(int id, CancellationToken cancellationToken);
 
 }
